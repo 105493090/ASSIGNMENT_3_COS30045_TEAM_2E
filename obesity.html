@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obesity rates across OECD countries">
+    <meta name="author" content="Romina Atefi, Martin Ly, Kyle Mcalister">
+    <title>Obesity - Risk & Longevity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/obesity.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Risk & Longevity</a>
+        <a href="index.html">Home</a>
+        <a href="smoking.html">Smoking</a>
+        <a href="obesity.html" class="active">Obesity</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Obesity & Overweight Rates</h1>
+        <p>
+            This chart shows the percentage of the population classified as obese
+            or overweight across OECD countries. Toggle between obese and overweight
+            measures, and filter by year.
+        </p>
+
+        <div class="chart-section">
+            <div class="controls">
+                <label>Year:</label>
+                <span id="yearButtons"></span>
+            </div>
+            <div class="controls">
+                <label>Measure:</label>
+                <span id="measureButtons">
+                    <button class="active">Obese</button>
+                    <button>Overweight</button>
+                </span>
+            </div>
+
+            <figure>
+                <div id="chart"></div>
+                <figcaption id="caption"></figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+    <footer>COS30045 Data Visualisation &bull; Swinburne University of Technology &bull; 2026</footer>
+
+</body>
+</html>

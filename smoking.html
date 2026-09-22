@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smoking rates across OECD countries">
+    <meta name="author" content="Romina Atefi, Martin Ly, Kyle Mcalister">
+    <title>Smoking - Risk & Longevity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/smoking.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Risk & Longevity</a>
+        <a href="index.html">Home</a>
+        <a href="smoking.html" class="active">Smoking</a>
+        <a href="obesity.html">Obesity</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Daily Smoking Rates</h1>
+        <p>
+            This chart shows the percentage of the population who are daily smokers
+            across 15 OECD countries. Use the controls below to filter by year and sex.
+        </p>
+
+        <div class="chart-section">
+            <div class="controls">
+                <label>Year:</label>
+                <span id="yearButtons"></span>
+            </div>
+            <div class="controls">
+                <label>Sex:</label>
+                <span id="sexButtons">
+                    <button class="active">Total</button>
+                    <button>Male</button>
+                    <button>Female</button>
+                </span>
+            </div>
+
+            <figure>
+                <div id="chart"></div>
+                <figcaption id="caption"></figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+    <footer>COS30045 Data Visualisation &bull; Swinburne University of Technology &bull; 2026</footer>
+
+</body>
+</html>

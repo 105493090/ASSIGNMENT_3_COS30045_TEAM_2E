@@ -3,30 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Risk and Longevity - OECD Health Data Visualisation">
+    <meta name="author" content="Romina Atefi, Martin Ly, Kyle Mcalister">
     <title>Risk & Longevity</title>
-
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="js/main.js" defer></script>
 </head>
-
 <body>
 
-    <header>
+    <nav>
+        <a href="index.html" class="logo">Risk & Longevity</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="smoking.html">Smoking</a>
+        <a href="obesity.html">Obesity</a>
+    </nav>
+
+    <div class="container">
+
         <h1>Risk & Longevity</h1>
         <p>
-            Exploring health risk factors and health outcomes
-            across OECD countries.
+            Exploring health risk factors across OECD countries.
+            This project examines how smoking rates and obesity levels
+            have changed over time across 15 nations, using data from
+            the <a href="https://stats.oecd.org/">OECD Health Statistics</a> database.
         </p>
-    </header>
 
-    <main>
-        <div id="visualisation">
-            <p>Visualisation coming soon.</p>
+        <div class="card-grid">
+            <a href="smoking.html" class="card">
+                <h3>Smoking</h3>
+                <p>How do daily smoking rates compare across countries? Which nations have seen the biggest decline?</p>
+            </a>
+            <a href="obesity.html" class="card">
+                <h3>Obesity</h3>
+                <p>How prevalent is obesity across OECD nations? How does it differ between males and females?</p>
+            </a>
         </div>
-    </main>
+
+        <h2>About the data</h2>
+        <p>
+            The data used in this project comes from the OECD Risk Factors for Health
+            dataset, covering 15 countries from 2015 to 2025. It includes measures
+            such as daily smoker rates, obesity and overweight percentages, and
+            tobacco consumption, broken down by sex.
+        </p>
+
+        <h2>Team</h2>
+        <p>Romina Atefi, Martin Ly, Kyle Mcalister<br>
+           COS30045 Data Visualisation - 2026</p>
+
+    </div>
+
+    <footer>COS30045 Data Visualisation &bull; Swinburne University of Technology &bull; 2026</footer>
 
 </body>
 </html>
