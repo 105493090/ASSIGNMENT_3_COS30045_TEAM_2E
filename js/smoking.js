@@ -90,7 +90,7 @@ function init() {
 
             // Filter data for current selections
             var filtered = smokingData.filter(function(d) {
-                return d.year === currentYear && d.sex === currentSex && d.age === "Total";
+                return d.year === currentYear && d.sex === currentSex && d.age === "15 years or over";
             });
 
             // Sort by value descending
