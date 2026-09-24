@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Obesity rates across OECD countries">
+    <meta name="description" content="Life expectancy across OECD countries">
     <meta name="author" content="Romina Atefi, Martin Ly, Kyle Mcalister">
-    <title>Obesity — Risk & Longevity</title>
+    <title>Life Expectancy — Risk & Longevity</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="js/obesity.js" defer></script>
+    <script src="js/life_expectancy.js" defer></script>
 </head>
 <body>
 
@@ -16,17 +16,17 @@
         <a href="index.html" class="logo">Risk & Longevity</a>
         <a href="index.html">Home</a>
         <a href="smoking.html">Smoking</a>
-        <a href="obesity.html" class="active">Obesity</a>
-            <a href="life_expectancy.html">Life Expectancy</a>
+        <a href="obesity.html">Obesity</a>
+        <a href="life_expectancy.html" class="active">Life Expectancy</a>
     </nav>
 
     <div class="container">
 
-        <h1>Obesity & Overweight Rates</h1>
+        <h1>Life Expectancy at Birth</h1>
         <p>
-            This chart shows the percentage of the population classified as obese
-            or overweight across OECD countries. Toggle between obese and overweight
-            measures, and filter by year.
+            This chart shows life expectancy at birth across 15 OECD countries.
+            It uses data from the OECD Health Status dataset. Use the controls
+            below to filter by year and sex.
         </p>
 
         <div class="chart-section">
@@ -35,10 +35,11 @@
                 <span id="yearButtons"></span>
             </div>
             <div class="controls">
-                <label>Measure:</label>
-                <span id="measureButtons">
-                    <button class="active">Obese</button>
-                    <button>Overweight</button>
+                <label>Sex:</label>
+                <span id="sexButtons">
+                    <button class="active">Total</button>
+                    <button>Male</button>
+                    <button>Female</button>
                 </span>
             </div>
 
