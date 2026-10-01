@@ -24,9 +24,10 @@
 
         <h1>Life Expectancy at Birth</h1>
         <p>
-            This chart shows life expectancy at birth across 15 OECD countries.
-            It uses data from the OECD Health Status dataset. Use the controls
-            below to filter by year and sex.
+            Life expectancy is a key indicator of population health. The bar chart compares
+            countries in a single year, the line chart shows trends over time, and the scatter
+            plot explores the relationship between smoking rates and life expectancy — combining
+            data from both OECD datasets.
         </p>
 
         <div class="chart-section">
@@ -43,9 +44,22 @@
                 </span>
             </div>
 
+            <h2>Comparison by country</h2>
             <figure>
-                <div id="chart"></div>
-                <figcaption id="caption"></figcaption>
+                <div id="barChart"></div>
+                <figcaption id="barCaption"></figcaption>
+            </figure>
+
+            <h2>Trends over time</h2>
+            <figure>
+                <div id="lineChart"></div>
+                <figcaption id="lineCaption"></figcaption>
+            </figure>
+
+            <h2>Smoking rate vs life expectancy</h2>
+            <figure>
+                <div id="scatterChart"></div>
+                <figcaption id="scatterCaption"></figcaption>
             </figure>
         </div>
 
