@@ -17,16 +17,16 @@
         <a href="index.html">Home</a>
         <a href="smoking.html">Smoking</a>
         <a href="obesity.html" class="active">Obesity</a>
-            <a href="life_expectancy.html">Life Expectancy</a>
+        <a href="life_expectancy.html">Life Expectancy</a>
     </nav>
 
     <div class="container">
 
         <h1>Obesity & Overweight Rates</h1>
         <p>
-            This chart shows the percentage of the population classified as obese
-            or overweight across OECD countries. Toggle between obese and overweight
-            measures, and filter by year.
+            Obesity is a growing health concern across OECD nations, linked to heart disease,
+            diabetes, and reduced life expectancy. The bar chart compares overall rates by
+            country, while the grouped chart reveals differences between males and females.
         </p>
 
         <div class="chart-section">
@@ -42,9 +42,16 @@
                 </span>
             </div>
 
+            <h2>Comparison by country</h2>
             <figure>
-                <div id="chart"></div>
-                <figcaption id="caption"></figcaption>
+                <div id="barChart"></div>
+                <figcaption id="barCaption"></figcaption>
+            </figure>
+
+            <h2>Male vs Female</h2>
+            <figure>
+                <div id="groupedChart"></div>
+                <figcaption id="groupedCaption"></figcaption>
             </figure>
         </div>
 

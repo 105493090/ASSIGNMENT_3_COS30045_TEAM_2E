@@ -17,15 +17,18 @@
         <a href="index.html">Home</a>
         <a href="smoking.html" class="active">Smoking</a>
         <a href="obesity.html">Obesity</a>
-            <a href="life_expectancy.html">Life Expectancy</a>
+        <a href="life_expectancy.html">Life Expectancy</a>
     </nav>
 
     <div class="container">
 
         <h1>Daily Smoking Rates</h1>
         <p>
-            This chart shows the percentage of the population who are daily smokers
-            across 15 OECD countries. Use the controls below to filter by year and sex.
+            Smoking remains a leading preventable cause of death worldwide.
+            The charts below explore daily smoking rates across 15 OECD countries.
+            The bar chart compares countries in a single year, while the line chart
+            reveals how rates have changed over time. Use the controls to filter by
+            year and sex.
         </p>
 
         <div class="chart-section">
@@ -42,9 +45,16 @@
                 </span>
             </div>
 
+            <h2>Comparison by country</h2>
             <figure>
-                <div id="chart"></div>
-                <figcaption id="caption"></figcaption>
+                <div id="barChart"></div>
+                <figcaption id="barCaption"></figcaption>
+            </figure>
+
+            <h2>Trends over time</h2>
+            <figure>
+                <div id="lineChart"></div>
+                <figcaption id="lineCaption"></figcaption>
             </figure>
         </div>
 
